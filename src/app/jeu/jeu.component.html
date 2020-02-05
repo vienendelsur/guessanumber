@@ -1,1 +1,27 @@
-<p>jeu works!</p>
+<div class="container fond p-2">
+    <div class="jumbotron mt-2">
+        
+      <h1><img src="assets/img/icons8-boulier-100.png" alt="boulier"> - Le jeu en Angular </h1>
+    </div>
+    <div class="row p-3">
+      
+     <div class="col-sm">
+          <div class="resultat">
+    
+            <h2>{{ message }}</h2>
+    
+          </div>
+     </div>
+
+    </div>
+    <div class="row p-3">
+        <div class="col-sm">
+            <input type="number" [(ngModel)]="proposition">
+            <button class="btn-primary ml-3" (click)="jouer()">OK</button>
+           
+        </div>
+        <div class="col-sm">
+            <h3>tentative n° {{ tentatives }}</h3>
+        </div>
+    </div>
+  </div>
