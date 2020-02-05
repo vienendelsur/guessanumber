@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+### consignes 
+1 - créer le composant "jeu"
+ng generate componant jeu
+2 - hasard : nombre de 1 à 100 (mdn : Math.random)
+3 - proposition : nombre saisi par l'utilisateur
+4 - tentatives : 0
+SI proposition > hasard ALORS
+on affiche "C'est plus petit !"
+tentatives = tentatives + 1
+SI proposition < hasard ALORS
+on affiche "C'est plus grand !"
+tentatives = tentatives + 1
+SI proposition = hasard ALORS
+on affiche "BRAVO, vous avez trouvé le nombre en X coups !"
